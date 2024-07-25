@@ -1,0 +1,196 @@
+/*Header section style*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    position: relative;
+}
+#heading{
+    position:absolute;
+    top: 18%;
+    left: 7%;
+    
+    font-size:80px;
+    color: black;
+}
+
+@media screen and (max-width:640px){
+    #heading{
+        font-size:43px;
+        left:4%;
+        top:22%;
+      }
+    nav ul li{
+        margin-right:6px;
+        font-size:11px;
+      }
+    #productheading{
+        font-size:25px;
+        }
+           
+    .aboutus h1{
+        font-size:25px;
+        }
+     
+    #aboutuspara{
+        font-size:14px;
+        }
+  }
+
+nav{
+    
+    background-color: #F3CFC6;
+     padding: 10px;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content:flex-end;
+}
+
+
+nav ul{
+    list-style-type:none;
+    display: flex;
+    
+   
+}
+nav ul li{
+    color: black;
+    cursor: pointer;
+    
+    font-weight: bold;
+    
+}
+
+nav ul li a{
+    color: black;
+    text-decoration:none;
+    transition: color 0.7s;
+}
+li:hover{
+    color: white;
+    
+}
+li a:hover{
+    color:white;
+}
+
+/*Searchbar style*/
+
+#search{
+    width: 70%;
+    height: 55px;
+    margin: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color:white;
+    color: black;
+}
+
+/*Products style*/
+.box{
+    border: solid 3px #28282B;
+   
+    width: 290px;
+    height: 410px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 30px;
+    color: white;
+    margin-left: 10px;
+}
+
+.products{
+    text-align: center;
+}
+
+#productheading{
+ color: white;
+ font-size:40px;
+}
+
+.box:hover{
+    color: white;
+    background-color:gray;
+    border-color: gray;
+    
+}
+
+.box2{
+    border: solid 3px #28282B;
+    color: white;
+    width: 290px;
+    height: 410px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.box2:hover{
+    color: white;
+    background-color: gray;
+    border-color: gray;
+}
+
+/* aboutus style*/
+.aboutus{
+    
+    margin: 35px;
+    color: white;
+}
+
+/*Contact style*/
+
+.contact{
+    text-align: center;
+    padding: 20px;
+    line-height: 27px;
+    background-color: #36454F;
+    color: white;
+}
+
+              /* Login page */
+              
+.body2{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}           
+
+.login{
+    border: 1px solid lightgray;
+    width: 440px;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    background-color: white;
+}
+
+@media screen and (max-width:640px) {
+    .login{
+        width: 380px;
+        height: 530px;
+        margin-top:100px;
+    }
+    
+    
+} 
+
+
+.input1{
+    padding: 18px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.lbox{
+    border: 1px solid lightgray ;
+    width: 308px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 12px;
+    padding-bottom:5px;
+}
