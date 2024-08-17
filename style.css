@@ -4,26 +4,26 @@
     margin: 0px;
 }
 .header{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:  #450920;
 }
+
 #heading{
-    position:absolute;
-    top: 18%;
-    left: 7%;
-    
-    font-size:80px;
-    color: black;
+    font-size:70px;
+    color:whitesmoke ;
 }
 
 @media screen and (max-width:640px){
     #heading{
         font-size:43px;
-        left:4%;
-        top:22%;
       }
     nav ul li{
-        margin-right:6px;
-        font-size:11px;
+        margin-right:10px;
+        font-size:13px;
       }
     #productheading{
         font-size:25px;
@@ -38,65 +38,47 @@
         }
   }
 
-nav{
-    
-    background-color: #F3CFC6;
-     padding: 10px;
-     display: flex;
-     flex-wrap: wrap;
-    justify-content:flex-end;
-}
-
-
 nav ul{
     list-style-type:none;
     display: flex;
-    
-   
 }
 nav ul li{
-    color: black;
     cursor: pointer;
-    
     font-weight: bold;
-    
+    margin: 5px 5px 5px 8px; 
 }
 
 nav ul li a{
-    color: black;
+    color: whitesmoke;
     text-decoration:none;
     transition: color 0.7s;
+    font-size: 18px;
 }
-li:hover{
-    color: white;
-    
-}
+
 li a:hover{
-    color:white;
+    color:#848890;
 }
 
 /*Searchbar style*/
 
 #search{
     width: 70%;
-    height: 55px;
     margin: 50px;
-    padding: 5px;
+    padding: 15px;
     font-size: 18px;
-    background-color:white;
-    color: black;
+    border-color: #450920;
+    border-radius: 30px;
 }
 
 /*Products style*/
-.box{
-    border: solid 3px #28282B;
-   
+.box1{
+    border: solid 2px #450920;
     width: 290px;
-    height: 410px;
+    height: fit-content;
     display: inline-block;
     cursor: pointer;
     margin-top: 30px;
-    color: white;
+    color: black;
     margin-left: 10px;
 }
 
@@ -105,22 +87,22 @@ li a:hover{
 }
 
 #productheading{
- color: white;
+ color: #450920;
  font-size:40px;
 }
 
-.box:hover{
+.box1:hover{
     color: white;
-    background-color:gray;
-    border-color: gray;
+    background-color:#da627d;
+    border-color: #ffa5ab;
     
 }
 
 .box2{
-    border: solid 3px #28282B;
-    color: white;
+    border: solid 2px #450920;
+    color: black;
     width: 290px;
-    height: 410px;
+    height: fit-content;
     display: inline-block;
     cursor: pointer;
     margin-left: 10px;
@@ -128,15 +110,15 @@ li a:hover{
 }
 .box2:hover{
     color: white;
-    background-color: gray;
-    border-color: gray;
+    background-color: #da627d;
+    border-color: #ffa5ab;
 }
 
 /* aboutus style*/
 .aboutus{
-    
     margin: 35px;
-    color: white;
+    color: #450920;
+    line-height: 1.5em;
 }
 
 /*Contact style*/
@@ -145,10 +127,9 @@ li a:hover{
     text-align: center;
     padding: 20px;
     line-height: 27px;
-    background-color: #36454F;
-    color: white;
+    color:#450920;
+    background-color: #f9dbbd;
 }
-
               /* Login page */
               
 .body2{
